@@ -1,0 +1,7 @@
+{
+    "dependencies": [
+        "require-run: ~/application/client/index.js",
+        "./client.js",
+        "./style.scss"
+    ]
+}

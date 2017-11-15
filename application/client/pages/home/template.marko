@@ -1,0 +1,21 @@
+<lasso-page package-path="./browser.json"/>
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            ${data.title}
+        </title>
+        <lasso-head/>
+    </head>
+    <body>
+        template bitchez
+        <app-main(data.preloadedState)/>
+        <script>
+            window.__PRELOADED_STATE__ = ${JSON.stringify(data.preloadedState).replace(/</g, '\\u003c')}
+        </script>
+        <lasso-body/>
+        <browser-refresh enabled=true/>
+    </body>
+</html>
